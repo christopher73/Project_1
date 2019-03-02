@@ -13,13 +13,17 @@ var submit = document.getElementById("btn-ClientSubmit");
 //get elements
 var client_money = "";
 var client_weather = "";
-// const client_date = "";
+var client_date = "";
 // const client_id = "";
 // const client_location = "";
 
 function getValues() {
   var btn = document.querySelectorAll(`.btn-money`);
   var btn2 = document.querySelectorAll(`.btn-weather`);
+  document.getElementById("clientDate").addEventListener("change", function() {
+    client_date = this.value;
+  });
+
   for (var i = 0; i < btn.length; i++) {
     btn[i].addEventListener("click", function() {
       var tmp = this.value;
@@ -37,7 +41,7 @@ function getValues() {
 getValues();
 
 submit.addEventListener("click", function() {
-  console.log(client_money + " and " + client_weather);
+  console.log(client_money + " and " + client_date + " and " + client_weather);
 });
 //   function getClienInfo(e) {
 //     e.preventDefault();
