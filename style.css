@@ -1,0 +1,146 @@
+body{
+    background-image: url(viviana-rishe-742282-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#clientForm{
+    text-align: center;
+    padding: 10px;
+}
+.btn-place{
+    border: 1px solid black;
+    height: 50px;
+    width: 120px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 2s, transform 2s;
+    margin: 20px;
+    transform: rotate(45deg);
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 30px;
+    background-image:url(summer.jpg);
+}
+.btn-place:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translate(3px,30px);
+    transition: box-shadow 2s, transform 2s;
+    background-image:url(summer.jpg);
+}
+
+.btn-money{
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 2s, transform 2s;
+    margin: 20px;
+    transform: rotate(45deg);
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 30px;
+    background-image:url(summer.jpg);
+}
+.btn-money:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translate(3px,30px);
+    transition: box-shadow 2s, transform 2s;
+    background-image:url(summer.jpg);
+}
+.btn-weather{
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 2s, transform 2s;
+    margin: 20px;
+    transform: rotate(45deg);
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 30px;
+    background-image:url(summer.jpg);
+}
+.btn-weather:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translate(3px,30px);
+    transition: box-shadow 2s, transform 2s;
+    background-image:url(summer.jpg)
+}
+#clientDate{
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin:20px;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 30px;
+    background-image:url(summer.jpg);
+}
+
+#btn-ClientSubmit{
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 30px;
+    background-image:url(summer.jpg);
+    margin: auto;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+#btn-ClientSubmit:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;    
+    transform: translate(3px,30px);
+    transition: box-shadow 2s, transform 2s;
+    background-image:url(summer.jpg);
+    height: 60px;
+    width: 320px;
+    transform: rotate(180deg);
+}
+#clock {
+	color:black;
+	font-size:  80px;
+    font-family: 'Sue Ellen Francisco', cursive;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+#banner {
+	color:black;
+	font-size:  40px;
+	text-align: center;
+	padding-right: 0px ;
+	width:  30%;
+	margin: 3% auto 0%;
+	font-family: 'Sue Ellen Francisco', cursive;
+	text-transform: uppercase;
+}
+
+#newyork{
+    color:black;
+	font-size:  80px;
+    font-family: 'Sue Ellen Francisco', cursive;
+	text-align: center;
+    text-transform: uppercase;
+    background-image: url(newyork.jpg);
+    width: 25%;
+    margin: auto;
+    border: 1px solid black;
+
+}
+.city{
+    display: inline;
+}
+
+
+
+
