@@ -80,20 +80,20 @@
   </div>
 
     <div class="footer w-100"> <footer>&copy; <b>Copyright 2019</b> 
-    
+    <button class="btn btn-secondary py-0 my-1" id="myBtn" onclick="vidFunction()">||</button>
     </div>
       
     <script>
-        var video = document.getElementById("myVideo");
+        var video = document.getElementById("myVideo"); 
         var btn = document.getElementById("myBtn");
         
-        function myFunction() {
+        function vidFunction() {
           if (video.paused) {
             video.play();
-            btn.innerHTML = "Pause";
+            btn.innerHTML = "||";
           } else {
             video.pause();
-            btn.innerHTML = "Play";
+            btn.innerHTML = ">";
           }
         }
         </script>

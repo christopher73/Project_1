@@ -4,6 +4,7 @@ $(document).ready(function() {
   $(".mainResultDiv").hide();
 
   setInterval(function() {
+    //this function inplements the clock
     var currentTime = new Date();
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
@@ -59,10 +60,15 @@ $(document).ready(function() {
 
   const instance = axios.create({
     headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
+      //mode: "no-cors",
       get: {
         "X-RapidAPI-Key": "401114fe6fmshb12dbbb2c327e71p18f2adjsn9ca39da349a2"
       }
-    }
+    },
+    withCredentials: true,
+    credentials: "same-origin"
   });
 
   function api_weather(place) {
