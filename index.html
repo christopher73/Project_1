@@ -1,52 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100 w-100" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Sue+Ellen+Francisco" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"  />
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Sue+Ellen+Francisco" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet"/>
     <!-- add bootstrap  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <title>Let's Travel</title>
-    <meta name="description" content="Javascript Digital Clock">
-	  <meta name="viewport" content= "width=device-width, initial-scale=1.0" >
   </head>
   
-  <body>
-      
-    <nav style="opacity: .4" class="navbar navbar-expand-lg navbar-light bg-light">
+  <body class="h-100 w-100">
+      <video autoplay loop  muted id="myVideo">
+          <source src="./assets/images/clip.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+    <nav style="opacity: .4" class="navbar navbar-expand-lg navbar-light bg-light w-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="index.html">Let's Travel</a>
+            <a class="navbar-brand" href="index.html">Let's Travel </a>
             <div class="city"></div>
             <div class="wind"></div>
             <div class="humidity"></div>
             <div class="temp"></div>
         </div>
-      </div>
     </nav>
+    <div class="row mainDiv w-100 m-auto p-0"> 
+      <div class="col-sm-12 align-self-center m-auto p-0">   
+        <div id="banner"> <span> Hello, Your Local Time is </span></div>
+        <div id="clock"> </div>
+        <div id="banner"> <span> and your are in</span></div>
+        <div id="newyork"> NYC </div>
+        <div class="chooseDiv">
+        
+          <input type="button" value="Let's Travel!!!" name="submit"  id="btn-ClientSubmit">  </input>
+        
+        </div>
+    </div>
+    </div>
+
+
     
-    <div id="banner"> <span> Hello, Your Local Time is </span></div>
-      <div id="clock"> </div>
-      <div id="banner"><span> and your are in</span></div>
-      <div id="newyork"> NYC 
+       <div id="loading" class=" row mainDiv w-100 m-auto p-0"> 
+         <div class="col-sm-12 align-self-center text-center m-auto p-0"> 
+           <img src="https://media.giphy.com/media/3ohhwLuj2mUPyddkUU/giphy.gif" /><br>
+          <div class="resultInfo">LOADING ...</div>
+          </div>
+        </div>
+    
+       
+
+    <div class="mainResultDiv">
+    <div class="row"> <div class="col-sm-12 m-auto p-5"><div class=" resultInfo result-destination "></div></div>
+      
+    </div>
+    <div class="row results w-100 h-75 m-auto p-0"> 
+      <div class="col-sm-4 weather-results align-self-center m-auto p-0">
+        <div class="resultInfo destinationWeather">
+          <div class="temp"></div>
+          <div class="mintemp"></div>
+          <div class="maxtemp"></div>
+        </div>
+      </div>
+      <div class="col-sm-4 ticketPrice-results align-self-center m-auto p-0">
+        <div class="resultInfo from"></div>
+        <div class="resultInfo to"></div>
+        <div class="resultInfo price"></div>
+      </div>
+      <div class="col-sm-4 pictures-results align-self-center m-auto p-0">
+
+      </div>
+    </div>
+  </div>
+    <div class="footer w-100"> <footer>&copy; <b>Copyright 2019</b> 
+    
     </div>
       
-    <div class="chooseDiv">
-        <a href="index2.html" >
-        <input type="button" value="Take me somewhere!!!" name="submit"  id="btn-ClientSubmit">  </input>
-      </a>
-    </div>
-    
-    <div class="footer"> <footer>&copy; <b>Copyright 2019</b> </footer> 
-    </div>
-      
-    
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
