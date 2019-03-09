@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Sue+Ellen+Francisco" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
     <!-- add bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Let's Travel</title>
@@ -14,101 +16,41 @@
   </head>
   
   <body>
-      <div class="city"></div>
-      <div class="wind"></div>
-      <div class="humidity"></div>
-      <div class="temp"></div>
-    
-    
+      
+    <nav style="opacity: .4" class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.html">Let's Travel</a>
+            <div class="city"></div>
+            <div class="wind"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+        </div>
+      </div>
+    </nav>
     
     <div id="banner"> <span> Hello, Your Local Time is </span></div>
       <div id="clock"> </div>
       <div id="banner"><span> and your are in</span></div>
-      <div id="newyork"> NYC </div>
+      <div id="newyork"> NYC 
+    </div>
       
-
-
-
-     
+    <div class="chooseDiv">
+        <a href="index2.html" >
+        <input type="button" value="Take me somewhere!!!" name="submit"  id="btn-ClientSubmit">  </input>
+      </a>
+    </div>
     
-    <!-- <form id="clientForm">
-      <div class="chooseDiv" id="choosePlace">
-        <input
-          class="btn-place"
-          type="button"
-          value="Domestic"
-          name="Placeone"
-          id="btn-PlaceOne"
-       />
-        <input
-          class="btn-place"
-          type="button"
-          value="International"
-          name="placeTwo"
-          id="btn-PlaceTwo"
-            /></div>
-      <div class="chooseDiv" id="chooseMoney">
-        <input
-          class="btn-money"
-          type="button"
-          value="$"
-          name="moneyOne"
-          id="btn-ClientMoneyOne"
-        />
-        <input
-          class="btn-money"
-          type="button"
-          value="$$"
-          name="moneyTwo"
-          id="btn-ClientMoneyTwo"
-        />
-        <input
-          class="btn-money"
-          type="button"
-          value="$$$"
-          name="moneyThree"
-          id="btn-ClientMoneyThree"
-        />
-      </div>
-      <div class="chooseDiv">
-        <input
-          class="btn-weather"
-          type="button"
-          value="Cold"
-          name="btn-ClientWeatherCold"
-          id="btn-ClientWeatherCold"
-        />
-        <input
-          class="btn-weather"
-          type="button"
-          value="Warm"
-          name="btn-ClientWeatherWarn"
-          id="btn-ClientWeatherWarn"
-        />
-        <input
-          class="btn-weather"
-          type="button"
-          value="Hot"
-          name="btn-ClientWeatherHot"
-          id="btn-ClientWeatherHot"
-        />
-      </div> -->
-
-      <!-- <div class="chooseDiv">
-        <input type="date" name="clientDate" id="clientDate" />
-      </div> -->
-      <div class="chooseDiv">
-        <input
-          type="button"
-          value="Take me somewhere!!!"
-          name="submit"
-          id="btn-ClientSubmit"
-        />
-      </div>
-    </form>
+    <div class="footer"> <footer>&copy; <b>Copyright 2019</b> </footer> 
+    </div>
+      
     
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  
   </body>
-</html>
+
+ </html>
