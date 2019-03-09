@@ -1,5 +1,26 @@
 $(document).ready(function() {
+  var ip = "";
   let thisState = "New+York";
+  let apiState = "";
+  $(function() {
+    $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function(json) {
+      ip = json.ip;
+      console.log("YOUR IP :" + ip);
+      var access_key = "001c27b25e12e6cc3b26b9debdd6a07c";
+      $.ajax({
+        url: "http://api.ipstack.com/" + ip + "?access_key=" + access_key,
+        dataType: "jsonp",
+        success: function(json) {
+          // output the "capital" object inside "location"
+          console.log(json.region_name);
+          apiState = json.region_name;
+        }
+      });
+    });
+  });
+
+  // get the API result via jQuery.ajax
+
   $("#loading").hide();
   $(".mainResultDiv").hide();
 
@@ -35,7 +56,7 @@ $(document).ready(function() {
   //this is the weather api
 
   var APIKey = "166a433c57516f51dfab1f7edaed8413";
-  var apiState = thisState.replace("+", " ");
+  apiState = thisState.replace("+", " ");
   console.log(apiState);
   var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${apiState},US&units=imperial&appid=${APIKey}`;
   $.ajax({
