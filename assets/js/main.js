@@ -96,7 +96,7 @@ $(document).ready(function() {
       )
       .then(function(response) {
         console.log(response.data.results[0].urls.small);
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 2; i++) {
           $(".pictures-results").append(
             `<img src="${response.data.results[i].urls.small}"/>`
           );
