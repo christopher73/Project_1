@@ -18,7 +18,16 @@ In this project we used the following APIs (3 total):
 
 ##to the unsplash api we only made one call to get pictures of the destination place
 
-to select the destination of our traveler we generated an array of multiple states, after the client clicks on the button (id = btn-ClientSubmit) it generates a random element from the array creating out target destination (note: this might not be the only random element selected, this could due to errors on the callback function such "no tickets found for the destination" in which in that case our recursion funtion will trigger the whole function (flightserach) again after an error is found)
+      In this project I selected the origin of our travelers by
+              identifying their public IP and the destination by generating an
+              array of multiple states, after the client clicks on the button
+              (id = btn-ClientSubmit) it generates a random element from the
+              "destination" array, given us our target destination (note: this
+              might not be the only random element selected, this function can
+              be triggered multiple times if the api respond with "no tickets
+              found for the destination" in which in that case our recursion
+              funtion will trigger the whole function (flightserach) again if an
+              error is found)
 
 Ben was a major help with our callback funtions !
 
