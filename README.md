@@ -18,7 +18,7 @@ In this project we used the following APIs (3 total):
 
 ##to the unsplash api we only made one call to get pictures of the destination place
 
-      In this project I selected the origin of our travelers by
+              In this project I selected the origin of our travelers by
               identifying their public IP and the destination by generating an
               array of multiple states, after the client clicks on the button
               (id = btn-ClientSubmit) it generates a random element from the
@@ -29,6 +29,3 @@ In this project we used the following APIs (3 total):
               funtion will trigger the whole function (flightserach) again if an
               error is found)
 
-Ben was a major help with our callback funtions !
-
-potential apis are ipAPI which can detect the area you are from
