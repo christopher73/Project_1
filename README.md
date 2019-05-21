@@ -1,5 +1,18 @@
 # Project_1 "Let's Travel"
 
+    
+                To acquired the origin of our travelers we identified their
+                public IP and the destination by generating an array of multiple
+                desired states, after the client clicks on the SEARCH button the
+                application generates a random element from the "destination"
+                array, given us our target destination (note: this might not be
+                the only random element selected, this function can be triggered
+                multiple times if the api respond with "no tickets found for the
+                destination" in which in that case our recursion function will
+                trigger the whole function (flightSerach) again if an error is
+                found)
+             
+
 #demo : https://christopher73.github.io/Project_1/
 
 In this project we used the following APIs (3 total):
