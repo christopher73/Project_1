@@ -1,4 +1,4 @@
-# Project_1 "Let's Travel"
+# "Let's Travel App"
 
     
                 To acquired the origin of our travelers we identified their
@@ -17,7 +17,7 @@
 
 In this project we used the following APIs (3 total):
 
-# SKYSCANNER for real time ticket quotes
+# SKYSCANNER API was used for real time ticket quotes
 
 ## for each result we make 3 calls to this apis. one is to get destination place ID and origin place od
 
@@ -29,5 +29,5 @@ In this project we used the following APIs (3 total):
 
 # UNSPLASH's API
 
-##to the unsplash api we only made one call to get pictures of the destination place
+## to the unsplash api we only made one call to get pictures of the destination place
 
